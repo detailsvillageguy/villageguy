@@ -17,6 +17,7 @@ navigator.mediaDevices.getUserMedia({
   videoElement.muted = true;
   setTimeout(() => {
     videoElement.play();
+    alert("1");
   });
   videoElement.addEventListener('loadedmetadata', () => {
     canvas.width = videoElement.videoWidth;
