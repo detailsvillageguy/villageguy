@@ -15,7 +15,7 @@ module.exports = function captureContainer(canvas, canvasStream, appendTo) {
   const closeButton = document.createElement('i');
   closeButton.className = 'closeButton ion-close-round';
   closeButton.addEventListener('click', close);
-  container.appendChild(closeButton);
+  //container.appendChild(closeButton);
 
   const download = () => {
     if (captured) {
