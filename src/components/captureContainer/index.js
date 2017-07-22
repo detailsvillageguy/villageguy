@@ -25,6 +25,7 @@ module.exports = function captureContainer(canvas, canvasStream, appendTo) {
       a.download = `snap.${captured.tagName === 'IMG' ? 'png' : 'webm'}`;
       document.body.appendChild(a);
       a.click();
+      alert("buraya cak gec");
       setTimeout(() => {
         document.body.removeChild(a);
       }, 100);
